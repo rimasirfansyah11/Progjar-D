@@ -12,4 +12,3 @@ while True:
     print(msg)
     sock.sendto(msg.encode(), (TARGET_IP, TARGET_PORT))
     time.sleep(1)
-
