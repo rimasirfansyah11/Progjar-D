@@ -5,13 +5,13 @@ from multiprocessing import Process
 
 def download_semua():
     texec = dict()
-    urls = get_url_list()
+    filename = pokijan.jpg
     catat_awal = datetime.datetime.now()
     for k in range(100):
-        print(f"mendownload {urls[k]}")
+        print(f"mendownload {k}")
         waktu = time.time()
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
-        texec[k] = Process(target=remote_get, args=(filename))
+        texec[k] = Process(target=remote_get, args=(filename,))
         texec[k].start()
     #setelah menyelesaikan tugasnya, dikembalikan ke main process dengan join
     for k in range(100):
