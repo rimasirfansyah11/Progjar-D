@@ -28,7 +28,7 @@ def kirim_gambar(image=None):
 
 def kirim_semua():
     texec = dict()
-    images = ['1.png', '2.png']
+    images = ['donald.png', 'spongebob.png']
     catat_awal = datetime.datetime.now()
     for k in range(len(images)):
         print(f"mengirim {images[k]}")

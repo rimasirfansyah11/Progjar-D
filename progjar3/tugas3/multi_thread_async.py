@@ -28,7 +28,7 @@ def kirim_gambar(image=None):
 
 def kirim_semua():
     texec = dict()
-    images = ['1.png', '2.png']
+    images = ['donald.png', 'spongebob.png']
     status_task = dict()
     task = concurrent.futures.ThreadPoolExecutor(max_workers=4)
     catat_awal = datetime.datetime.now()

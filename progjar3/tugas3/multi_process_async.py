@@ -28,7 +28,7 @@ def kirim_gambar(image=None):
 
 def kirim_semua():
     texec = dict()
-    images = ['1.png', '2.png']
+    images = ['donald.png', 'spongebob.png']
     status_task = dict()
     task_pool = Pool(processes=20) #2 task yang dapat dikerjakan secara simultan, dapat diset sesuai jumlah core
     catat_awal = datetime.datetime.now()
